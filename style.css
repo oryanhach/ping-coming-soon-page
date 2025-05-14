@@ -162,6 +162,18 @@ body {
 	border: 1.5px solid var(--clr-secondary-blue);
 	font-size: 0.875rem;
 	margin-bottom: 0.75rem;
+	position: relative;
+}
+
+.error {
+	border: 2px solid var(--clr-seconday-red);
+}
+
+.error-msg {
+	color: var(--clr-seconday-red);
+	font-size: 0.75rem;
+	margin-top: 0.5rem;
+	font-style: italic;
 }
 
 .ping__btn {
@@ -171,6 +183,12 @@ body {
 	color: #ffffff;
 	background-color: var(--clr-primary-blue);
 	padding: 0.5rem;
+}
+
+.ping__btn:hover {
+	cursor: pointer;
+	background-color: var(--clr-secondary-blue);
+	transform: scale(0.95);
 }
 
 .ping__footer {
@@ -203,6 +221,9 @@ body {
 
 .footer__icon:hover {
 	cursor: pointer;
+	background-color: var(--clr-primary-blue);
+	border: none;
+	color: #ffffff;
 }
 
 .footer__socials a,
@@ -241,6 +262,7 @@ body {
 		flex-direction: row;
 		align-items: baseline;
 		width: 70%;
+		position: relative;
 	}
 
 	.ping__input {
@@ -254,6 +276,12 @@ body {
 		width: 30%;
 		padding: 15px;
 		border-radius: 30px;
+	}
+
+	.error-msg {
+		position: absolute;
+		top: 4.5rem;
+		left: 3.5rem;
 	}
 
 	.dashboard__img {
