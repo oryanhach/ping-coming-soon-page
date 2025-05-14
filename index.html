@@ -10,19 +10,52 @@
 
   <title>Frontend Mentor | Ping coming soon page</title>
 
+  <!-- Font Awesome -->
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/935f6be249.js" crossorigin="anonymous"></script>
+
 
 </head>
 
 <body>
 
-  We are launching soon!
+  <main class="ping">
 
-  Subscribe and get notified
+    <header class="ping__header">
+      <img src="images/logo.svg" class="ping__logo" alt="Ping logo">
+      <h1 class="ping__title">
+        We are launching <span>soon!</span>
+      </h1>
+      <p class="ping__subtitle">
+        Subscribe and get notified
+      </p>
+    </header>
 
-  Notify Me
+    <section class="ping__hero">
+      <form class="ping__form">
+        <input type="email" id="email" name="email" class="ping__input" placeholder="Your email address..." required>
+        <button type="submit" class="ping__btn"></button>
+      </form>
 
-  &copy; Copyright Ping. All rights reserved.
+      <img src="images/illustration-dashboard.png" class="dashboard__img" alt="image of a dashboard with graphs">
+    </section>
 
+
+    Notify Me
+
+
+    <footer class="ping__footer">
+      <ul class="footer__socials">
+        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f footer__icon"></i></a></li>
+        <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter footer__icon"></i></a></li>
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram footer__icon"></i></a></li>
+      </ul>
+      <p class="footer__text">
+        &copy; Copyright Ping. All rights reserved.
+
+      </p>
+    </footer>
+  </main>
 
 </body>
 
