@@ -1,3 +1,23 @@
+:root {
+	/* Colors */
+	--clr-primary-blue: hsl(223, 87%, 63%);
+
+	--clr-secondary-blue: hsl(223, 100%, 88%);
+	--clr-seconday-red: hsl(354, 100%, 66%);
+
+	--clr-neutral-gray: hsl(0, 0%, 59%);
+	--clr-neutral-blue: hsl(209, 33%, 12%);
+
+	/* Typography */
+	--ff-primary: 'Libre Franklin', sans-serif;
+
+	--fs-primary: 22px;
+
+	--fw-bold: 700;
+	--fw-normal: 600;
+	--fw-light: 300;
+}
+
 /* CSS RESET */
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -74,4 +94,125 @@ h6 {
 #root,
 #__next {
 	isolation: isolate;
+}
+
+/* general styling */
+
+body {
+	font-family: var(--ff-primary);
+}
+
+.ping {
+	padding: 4.5rem 1.5rem 0rem 1.5rem;
+}
+
+.ping__header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.ping__logo {
+	margin-bottom: 2rem;
+	height: 1.1rem;
+}
+
+.ping__title {
+	font-size: 1.4rem;
+	color: var(--clr-neutral-gray);
+	font-weight: var(--fw-light);
+	margin-bottom: 0.5rem;
+}
+
+.ping__title span {
+	color: var(--clr-neutral-blue);
+	font-weight: var(--fw-bold);
+}
+
+.ping__subtitle {
+	color: var(--clr-neutral-blue);
+	font-weight: var(--fw-light);
+	font-size: 0.9rem;
+	margin-bottom: 1.3rem;
+}
+
+.ping__hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.ping__form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 3.5rem;
+}
+
+.ping__input {
+	width: 87%;
+	border-radius: 20px;
+	padding: 7px 7px 7px 1.7rem;
+	color: var(--clr-secondary-blue);
+	border: 1.5px solid var(--clr-secondary-blue);
+	font-size: 0.875rem;
+	margin-bottom: 0.75rem;
+}
+
+.ping__btn {
+	width: 87%;
+	border: none;
+	border-radius: 20px;
+	color: #ffffff;
+	background-color: var(--clr-primary-blue);
+	padding: 0.5rem;
+}
+
+.ping__footer {
+	margin-top: 9rem;
+	text-align: center;
+}
+
+.footer__socials {
+	list-style: none;
+	margin-bottom: 2rem;
+	padding: 0;
+}
+
+.footer__socials li {
+	display: inline-block;
+}
+
+.footer__icon {
+	color: var(--clr-primary-slate);
+	width: 1.75rem;
+	height: 1.75rem;
+	border: 1px solid var(--clr-secondary-blue);
+	border-radius: 50%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.footer__icon:hover {
+	cursor: pointer;
+}
+
+.footer__socials a,
+.footer__socials a:visited,
+.footer__socials a:active {
+	text-decoration: none;
+}
+
+.footer__text {
+	font-size: 0.7rem;
+	color: var(--clr-neutral-gray);
+	font-weight: var(--fw-light);
 }
