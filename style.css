@@ -216,3 +216,59 @@ body {
 	color: var(--clr-neutral-gray);
 	font-weight: var(--fw-light);
 }
+
+@media (min-width: 1440px) {
+	.ping {
+		padding: 4.5rem 15rem 0rem 15rem;
+	}
+
+	.ping__logo {
+		margin-bottom: 2.5rem;
+		height: 1.5rem;
+	}
+
+	.ping__title {
+		font-size: 2.5rem;
+	}
+
+	.ping__subtitle {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+	}
+
+	.ping__form {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		width: 70%;
+	}
+
+	.ping__input {
+		width: 60%;
+		padding: 15px 7px 15px 1.5rem;
+		margin-right: 0.7rem;
+		border-radius: 30px;
+	}
+
+	.ping__btn {
+		width: 30%;
+		padding: 15px;
+		border-radius: 30px;
+	}
+
+	.dashboard__img {
+		width: 63%;
+	}
+
+	.ping__footer {
+		margin-top: 5rem;
+	}
+
+	.footer__socials {
+		margin-bottom: 1rem;
+	}
+
+	.footer__text {
+		margin-bottom: 2rem;
+	}
+}
